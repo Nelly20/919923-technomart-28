@@ -7,48 +7,56 @@
   <body>
 
     <header>
-    	<div>
-    		<a href="index.html">Техномарт</a>
+    	<div class="navigation">
+    		<a><img src="img/logo.png"></a>
 	    	<input type="search" name="search" placeholder="Поиск">
-	    	<a href="#">Закладки</a>
-	    	<a href="#">Корзина</a>
+	    	<a href="#">Закладки: 0</a>
+	    	<a href="#">Корзина: 0</a>
 	    	<a href="#">Оформить заказ</a>
     	</div>
     	
-    	<div>
-    		<p>Интернет-магазин  строительных материалов  и инструментов для ремонта</p>
-    		<p><a href="+78125550555">+7 (812) 555-05-55</a></p>
-    		<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-    		<a href="#">Войти</a>
-    		<a href="#">Регистрация</a>
+    	<div class="main-navigation">
+	    	<div class="info">
+	    		<p>Интернет-магазин <br>
+	    		строительных материалов <br>
+	    		и инструментов для ремонта</p>
+	    		<div class="phone-number">
+	    			<p><a href="+78125550555">+7 (812) 555-05-55</a></p>
+	    			<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+	    		</div>
+	    		<div class="sign-in">
+	    			<a href="#">Войти</a>
+	    			<a href="#">Регистрация</a>
+	    		</div>
+	    	</div>
+	    	
+	    	
+	    	<nav class="">
+	    			<ul>
+	    				<li>
+	    					<a href="index.html">Главная</a>
+	    				</li>
+	    				<li>
+	    					<a href="#">Компания</a>
+	    				</li>
+	    				<li>
+	    					<a href="catalog.html">Каталог</a>
+	    				</li>
+	    				<li>
+	    					<a href="#">Новости</a>
+	    				</li>
+	    				<li>
+	    					<a href="#">Спецпредложения</a>
+	    				</li>
+	    				<li>
+	    					<a href="#">Доставка</a>
+	    				</li>
+	    				<li>
+	    					<a href="#">Контакты</a>
+	    				</li>
+	    			</ul>
+	    	</nav>
     	</div>
-    	
-    	
-    	<nav>
-    			<ul>
-    				<li>
-    					<a href="index.html">Главная</a>
-    				</li>
-    				<li>
-    					<a href="#">Компания</a>
-    				</li>
-    				<li>
-    					<a href="catalog.html">Каталог</a>
-    				</li>
-    				<li>
-    					<a href="#">Новости</a>
-    				</li>
-    				<li>
-    					<a href="#">Спецпредложения</a>
-    				</li>
-    				<li>
-    					<a href="#">Доставка</a>
-    				</li>
-    				<li>
-    					<a href="#">Контакты</a>
-    				</li>
-    			</ul>
-    	</nav>
     </header>
 
     <main>
@@ -236,7 +244,7 @@
     <footer>
     	
     		<div>
-    			<a href="index.html">Техномарт</a>
+    			<a href="index.html"><img src="img/logo.png"></a>
 	    		<ul>
 	    			<li>
 	    				<a href="#">Компания</a>
@@ -279,12 +287,35 @@
     					<a href="#">Инстаграм</a>
     				</li>
     			</ul>
-    			<p>Обратная связь:  <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+    			<p>Обратная связь:  <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
     			<p>Разработано —  <a href="htmlacademy.ru">htmlacademy.ru</a></p>
     			</div>
     			
     		</div>
     	
     </footer>
+
+    <!--  Напишите нам -->
+    <section class="modal">
+    	<form>
+    		<button>закрыть</button>
+    		<label for="name">Ваше имя:</label>
+    		<input type="text" name="name" placeholder="Имя Фамилия" id="name">
+
+    		<label for="email">Ваш e-mail:</label>
+    		<input type="email" name="email" placeholder="email@example.com" id="email">
+
+    		<label for="text">Текст письма:</label>
+    		<textarea rows="1" name="text" id="text" placeholder="В свободной форме"></textarea>
+
+    		<button type="submit">Оформить заказ</button>
+    	</form>
+    </section>
+
+    <!-- карта -->
+    <section>
+    	<button>закрыть</button>
+    	<img src="img/map-popup.png" alt="карта">
+    </section>
   </body>
 </html>
