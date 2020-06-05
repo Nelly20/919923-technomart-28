@@ -64,10 +64,25 @@
             <aside>
                 <p>Фильтр:</p>
                 <form action="https://echo.htmlacademy.ru" method="get" oninput="daysoutput.value=dayscount.value">
-                    <fieldset>
+                    <fieldset class="filter-item">
                         <legend>Цена:</legend>
-                        <input type="range" min="0" max="30000" step="1" value="20000" aria-label=""  id="dayscount" name="dayscount">
-                        <output name="daysoutput">1</output>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle min-toggle"></div>
+                                <div class="toggle max-toggle"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">
+                                    от<input type="number" name="min-price" value="0">
+                                </label>
+                                <label class="max-price">
+                                    от<input type="number" name="max-price" value="30000">
+                                </label>
+                            </div>
+                        </div>
                     </fieldset>
 
                     <fieldset>
@@ -258,5 +273,13 @@
         
     </footer>
     
+
+    <!-- Товар добавлен в корзину -->
+    <section class="modal>
+        <button>Закрыть</button>
+        <p>Товар добавлен в корзину!</p>
+        <a href="#">Оформить заказ</a>
+        <a href="#">Продолжить покупки</a>
+    </section>
   </body>
 </html>
