@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    
+   
   </head>
   <body class="page-body">
 
-    <header>
-    	<div class="navigation">
-    		<a href="index.html"><img src="images/logo.svg" width="220" height="47" alt="Техномарт"></a>
+    <header class="page-header">
+    	<div class="user-nav">
+    		<a href="index.html" class="logo"><img src="images/logo.svg" width="220" height="47" alt="Техномарт"></a>
 	    	<input type="search" name="search" placeholder="Поиск">
 	    	<a href="#">Закладки: 0</a>
 	    	<a href="#">Корзина: 0</a>
-	    	<a href="#">Оформить заказ</a>
+	    	<a href="#" class="btn btn-green">Оформить заказ</a>
     	</div>
     	
-    	<div class="main-navigation">
+    	<div class="nav">
 	    	<div class="info">
 	    		<p>Интернет-магазин <br>
 	    		строительных материалов <br>
@@ -34,7 +34,7 @@
 	    	</div>
 	    	
 	    	
-	    	<nav class="">
+	    	<nav class="main-nav">
     			<ul>
     				<li>
     					<a href="index.html">Главная</a>
@@ -64,43 +64,43 @@
 
     <main>
     	<h1 class="visually-hidden">Интернет-магазин  "Техномарт"</h1>
-    	<section>
+    	<section class="categories">
     		<ul>
-    			<li>
+    			<li class="category-item category-first">
     				<h3>Материалы</h3>
-    				<a href="#">на любой вкус</a>
+    				<a href="#" class="btn btn-white">на любой вкус</a>
     			</li>
-    			<li>
+    			<li class="category-item category-second">
     				<h3>Инструмент</h3>
-    				<a href="#">На все случаи</a>
+    				<a href="#" class="btn btn-white">На все случаи</a>
     			</li>
-    			<li>
+    			<li class="category-item category-third">
     				<h3>Техника</h3>
-    				<a href="#">для стройки</a>
+    				<a href="#" class="btn btn-white">для стройки</a>
     			</li>
     		</ul>
     		
-    		<section>
-    			<div>
+    		<section class="slides">
+    			<div class="firs-slide">
 					<h3>Перфораторы</h3>
 					<p>Настоящие мужские игрушки</p>
-					<a href="catalog.html">Открыть каталог</a>
+					<a href="catalog.html" class="btn btn-red">Открыть каталог</a>
 				</div>
-				<div>
+				<div class="second-slide">
 					<h3>Дрели</h3>
 					<p>Соседям на радость!</p>
-					<a href="catalog.html">Открыть каталог</a>
+					<a href="catalog.html" class="btn btn-red">Открыть каталог</a>
 				</div>
     		</section>
 			
     		<ul>
-    			<li>
+    			<li class="category-item category-fourth">
     				<h3>Скидки 50%</h3>
-    				<a href="#">На 350 товаров</a>
+    				<a href="#" class="btn btn-white">На 350 товаров</a>
     			</li>
-    			<li>
+    			<li class="category-item category-fifth">
     				<h3>Доставка</h3>
-    				<a href="#">Бесплатно</a>
+    				<a href="#" class="btn btn-white">Бесплатно</a>
     			</li>
     		</ul>
     	</section>
@@ -300,8 +300,8 @@
 
     <!--  Напишите нам -->
     <section class="modal">
-    	<form action="https://echo.htmlacademy.ru" method="get">
-    		<button>закрыть</button>
+    	<form action="https://echo.htmlacademy.ru" method="post">
+    		<button type="button">закрыть</button>
     		<label for="name">Ваше имя:</label>
     		<input type="text" name="name" placeholder="Имя Фамилия" id="name">
 
@@ -317,7 +317,7 @@
 
     <!-- карта -->
     <section class="modal">
-    	<button>закрыть</button>
+    	<button type="button">закрыть</button>
     	<img src="images/map-popup.png" alt="карта">
     </section>
   </body>
