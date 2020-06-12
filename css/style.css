@@ -10,12 +10,13 @@
   --basic-light-gray: #F1F5F7;
   --basic-light: #EAEAEA;
   --basic-white: #FFFFFF;
-  --basic-red: #EE3643;
-  --basic-green: #63A63E;
+  --basic-red: #EE3643;  
+  --basic-green: #63A63E;  
   --basic-dark-blue: #32425C;
-  --basic-light-yellow: #FFD180;
+  --basic-light-yellow: #FFD180;  
 
   --special-light-green: #8ED78F;
+  --special-dark-green: #518534;
   --special-darkblue: #161D29;
   --special-green: #5FBB2D;
   --special-red: #BA2732;
@@ -51,7 +52,7 @@ body{
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
@@ -79,23 +80,29 @@ input[type="radio"].visually-hidden{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+ul li{
+  list-style: none;
+}
 .modal{
   display: none;
 }
 .btn{
   display: inline-block;
-  border: none;
+  
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
   text-transform: uppercase;
   text-align: center;
+
+  border: none;
  }
 .btn-red{
-  background-color: var(--basic-red);
-  padding: 9px 1px;
   width: 192px;
   height: 38px;
+  padding: 9px 1px;
+
+  background-color: var(--basic-red);
 }
 .btn-red:active{
   background-color: var(--special-red);
@@ -104,6 +111,7 @@ input[type="radio"].visually-hidden{
   width: 135px;
   height: 38px;
   padding: 9px 5px;
+
   background-color: rgba(255, 255, 255, 0.3);
 }
 .btn-white:hover{
@@ -123,9 +131,10 @@ input[type="radio"].visually-hidden{
   background-color: var(--basic-dark-gray);
 }
 .user-nav a{
-  color: var(--basic-white);
-  font-size: 18px;
   padding: 9px 24px 9px 43px;
+
+  font-size: 18px;
+  color: var(--basic-white);
 }
 .user-nav a:hover{
   color: var(--basic-white);
@@ -152,17 +161,18 @@ input[type="radio"].visually-hidden{
 }
 .user-nav .btn-green{
   padding: 9px 19px 9px 19px;
-  box-sizing: border-box;
+  
   font-size: 18px;
-  background-color: var(--basic-green);
   text-transform: none;
+
+  background-color: var(--basic-green);
 }
 .user-nav .btn-green:hover{
   background-color: var(--special-green);
 }
 .user-nav .btn-green:active{
-  background-color: var(--basic-green);
   color: var(--special-light-grey);
+  background-color: var(--basic-green);
 }
 .nav{
   background-color: var(--basic-light-gray);
@@ -172,17 +182,19 @@ input[type="radio"].visually-hidden{
 
 }
 .info p{
-  color: var(--basic-red);
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
+  color: var(--basic-red);
 }
 .phone-number a{
+  padding: 8px 45px;
+
   font-size: 21px;
   font-weight: bold;
   color: var(--basic-red);
+
   border: 3px solid var(--basic-white);
-  padding: 8px 45px;
 }
 .phone-number address{
   font-size: 14px;
@@ -191,8 +203,9 @@ input[type="radio"].visually-hidden{
   color: var(--basic-dark-blue);
 }
 .sign-in a{
-  color: var(--basic-black);
   padding: 12px 24px;
+
+  color: var(--basic-black);
   background-color: var(--basic-white);
 }
 .sign-in a:hover{
@@ -202,28 +215,32 @@ input[type="radio"].visually-hidden{
   color: var(--special-light-grey);
 }
 .main-nav{
+  padding: 16px 47px;
+
   background-color: var(--basic-dark-blue);
   border-bottom: 4px solid var(--basic-dark-gray);
-  padding: 16px 47px;
 }
 .main-nav ul{
   list-style: none;
 }
-.main-nav ul a{
-  color: var(--basic-white);
+.main-nav a{
   padding: 16px 24px;
+
+  color: var(--basic-white);
 }
-.main-nav ul a:hover{
+.main-nav a:hover{
   background-color: var(--special-blue);
 }
-.main-nav ul a:active{
-  background-color: var(--special-dark-blue);
+.main-nav a:active{
   color: var(--special-light-grey);
+  background-color: var(--special-dark-blue);
 }
+
 /*Main*/
 .category-item{
   padding: 23px;
-  list-style: none;
+
+  
   color: var(--basic-white);
 }
 .category-item h3{
@@ -253,9 +270,10 @@ input[type="radio"].visually-hidden{
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
-  color: var(--basic-white);
-  background-color: var(--basic-dark-blue);
   text-transform: uppercase;
+  color: var(--basic-white);
+
+  background-color: var(--basic-dark-blue);
 }
 .slides p{
   color: var(--basic-white);
@@ -272,58 +290,60 @@ input[type="radio"].visually-hidden{
   background-color: var(--special-light);
 }
 .title{
+  padding: 30px 28px; 
+
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-gray);
-  padding: 30px 28px;
 }
 .title-section a{
   margin: 25px 14px;
 }
-.popular ul li{
-  list-style: none;
-  text-align: center;
+.popular li{
   font-family: 'PT Sans', sans-serif;
+  text-align: center;
 }
 .product-item{
   width: 220px;
-  border: 1px  solid var(--special-greylight);
   padding: 22px 0;
+
+  border: 1px  solid var(--special-greylight);
 }
 .product-item:hover{
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 .product-item h3{
+  margin: 0;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 20px;
-  margin: 0;
   color: var(--basic-black);
 }
 .old-price{
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
-  color: var(--special-grey);
   text-decoration: line-through;
+  color: var(--special-grey);
 }
 .new-price{
-  margin: 0 auto;
   width: 141px;
+  padding: 10px 32px;
+  margin: 0 auto;
+  
   text-align: center;
   font-weight: bold;
-  border-radius: 4px;
-  padding: 10px 32px;
   color: var(--basic-white);
+
+  border-radius: 4px;
   background-color: var(--basic-red);
-}
-.brands ul li{
-  list-style: none;
 }
 .brand-item{
   width: 220px;
   min-height: 149px;
+
   border: 1px solid var(--basic-light);
 }
 .brand-item:hover{
@@ -336,27 +356,26 @@ input[type="radio"].visually-hidden{
   background-color: var(--basic-light-gray);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.services ul li{
-  list-style: none;
-}
 .services h2{
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   font-weight: normal;
   text-transform: uppercase;
 }
 .service-title{
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 .btn-service{
-  font-size: 21px;
-  padding-left: 22px;
-  text-align: left;
   width: 240px;
   height: 61px;
+  padding-left: 22px;
+
+  font-size: 21px;
+  text-align: left;
   text-transform: capitalize;
+
   background-color: var(--basic-gray);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-bottom: 1px solid var(--basic-dark-gray);
@@ -367,8 +386,8 @@ input[type="radio"].visually-hidden{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .btn-service:active{
-  background-color: var(--basic-white);
   color: var(--basic-dark-gray);
+  background-color: var(--basic-white);
 }
 .first-service h3{
   font-size: 30px;
@@ -379,9 +398,10 @@ input[type="radio"].visually-hidden{
 .btn-credit{
   width: 220px;
   height: 40px;
-  background-color: var(--special-light-red);
-  border-radius: 4px;
   padding: 10px auto;
+
+  border-radius: 4px;
+  background-color: var(--special-light-red);
 }
 .btn-credit:hover{
   background-color: var(--special-red);
@@ -391,23 +411,23 @@ input[type="radio"].visually-hidden{
 }
 .about-us h2, .contacts h2{
   font-size: 30px;
+  font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
-  font-weight: normal;
 }
-.about-us ul li{
+.about-us li{
   position: relative;
-  list-style: none;
   padding-left: 30px;
 }
-.about-us ul li::before{
+.about-us li::before{
   position: absolute;
   content: '';
   width: 25px;
   height: 2px;
-  background-color: var(--basic-red);
   top: 10px;  
   left: -15px;
+
+  background-color: var(--basic-red);
 }
 .btn-about-us{
   width: 220px;
@@ -419,27 +439,31 @@ input[type="radio"].visually-hidden{
 .contacts a{
   width: 100%;
 }
+
 /*Footer*/
 .page-footer{
   background-color: var(--basic-gray);
 }
-.footer-nav ul li{
-  list-style: none;
-}
-.footer-nav ul li a{
-  color: var(--basic-white);
+.footer-nav  a{
   margin-left: 48px;
+
+  color: var(--basic-white);
 }
 .footer-info address, a{
-  color: var(--basic-white);
   font-weight: normal;
   font-style: normal;
+  color: var(--basic-white);
 }
-.footer-info ul li{
-  list-style: none;
-}
-.footer-info ul li a{
+.footer-info a{
   color: var(--basic-light-yellow);
+}
+.footer-info a:hover, 
+.footer-nav a:hover{
+  text-decoration: underline;
+}
+.footer-info a:active, 
+.footer-nav a:active{
+  opacity: 0.5;
 }
 .footer-copyright{
   background-color: var(--basic-dark-gray);
@@ -448,12 +472,6 @@ input[type="radio"].visually-hidden{
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
-}
-.footer-info ul li a:hover, .footer-nav ul li a:hover{
-  text-decoration: underline;
-}
-.footer-info ul li a:active, .footer-nav ul li a:active{
-  opacity: 0.5;
 }
 .social-set{
 
@@ -467,39 +485,41 @@ input[type="radio"].visually-hidden{
 
 /*CATALOG*/
 .shopping-cart{
-  font-size: 18px;
   padding: 9px 21px 9px 35px;
+
+  font-size: 18px;
+  
   background-color: var(--basic-red);
 }
 .user{
+  padding: 12px 57px;
+
   font-size: 21px;
   color: var(--basic-black);
-  padding: 12px 57px;
+  
   background-color: var(--basic-white);
 }
 .user-interface:hover{
   color: var(--basic-red);
 }
-.user:active, .user-interface:active{
+.user:active, 
+.user-interface:active{
   color: var(--special-light-grey);
 }
 .user-interface{
   font-size: 16px;
   color: var(--basic-gray);
 }
-.bread-crumbs li{
-  list-style: none;
-}
-.bread-crumbs li a{
-  font-family: 'PT Sans', sans-serif;
+.bread-crumbs a{
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   color: var(--basic-black);
 }
-.bread-crumbs li a:hover{
+.bread-crumbs a:hover{
   color: var(--basic-red);
 }
-.bread-crumbs li a:active{
+.bread-crumbs a:active{
   color: var(--special-light-grey);
 }
 .products-catalog h1{
@@ -508,25 +528,29 @@ input[type="radio"].visually-hidden{
   font-weight: normal;
   text-transform: uppercase;
   color: var(--basic-dark-gray);
+
   background-color: var(--basic-light-gray);
 }
 .filter{
-  font-family: 'PT Sans', sans-serif;
+  padding: 10px 0 10px 19px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   text-transform: uppercase;
-  background-color: var(--special-grey-light);
+
   border-radius: 2px;
-  padding: 10px 0 10px 19px;
+  background-color: var(--special-grey-light);
 }
 .filter-item{
   margin: 0;
   padding: 0;
+
   border: none;
 }
 .filter-title{
   font-size: 17px;
-  text-transform: uppercase;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .range-filter{
   width: 220px;
@@ -539,17 +563,19 @@ input[type="radio"].visually-hidden{
   padding-top: 39px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: var(--special-grey-light);
+
   border-radius: 5px;
+  background-color: var(--special-grey-light);
 }
 .range-controls .bar{
   width: 70%;
   height: 2px;
-  background-color: var(--basic-green);
 
+  background-color: var(--basic-green);
 }
 .range-controls .scale{
   height: 2px;
+
   background-color: var(--special-grey);
 }
 .range-controls .toggle{
@@ -559,6 +585,7 @@ input[type="radio"].visually-hidden{
   width: 20px;
   height: 20px;
   padding: 0;
+
   border: 8px solid var(--basic-white);
   background-color: var(--special-grey);
   border-radius: 50%;
@@ -572,50 +599,57 @@ input[type="radio"].visually-hidden{
   left: 18px;
   }
 .max-price input[type="number"], .min-price input[type="number"]{
-  font-family: 'PT Sans', sans-serif;
-  font-size: 17px;
   width: 95px;
   padding: 10px 0;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
   text-align: center;
-  background-color: var(--special-grey-light);
+
   border: none;
+  background-color: var(--special-grey-light);
 }
 .filter-label{
   font-size: 15px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
 .btn-filter{
-  font-size: 13px;
-  font-family: 'PT Sans', sans-serif;
   padding: 10px 80px;
+
+  font-size: 13px;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
-  border: 1px solid var(--special-light-grey);
   color: var(--basic-black);
+
+  border: 1px solid var(--special-light-grey);
   background-color: var(--basic-white);
 }
 .filters {
   background-color: var(--special-grey-light);
 }
 .filters a{
-  font-family: 'PT Sans', sans-serif;
+  margin-right: 70px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   text-transform: uppercase;
+  color: var(--special-grey);
+
   border-bottom: 1px dotted var(--basic-red);
-  background-color: var(--special-grey-light);
   border-top: none;
   border-left: none;
   border-right: none;
-  color: var(--special-grey);
-  margin-right: 70px;
+  background-color: var(--special-grey-light);
 }
 .filters a:hover{
-  border-bottom: 1px solid var(--basic-red);
   color: var(--basic-black);
+
+  border-bottom: 1px solid var(--basic-red);
 }
 .filters a:active{
-  border-bottom: none;
   color: var(--basic-red);
+  border-bottom: none;
 }
 .products-catalog{
 
@@ -624,53 +658,75 @@ input[type="radio"].visually-hidden{
   width: 135px;
   height: 38px;
   padding: 9px 0;
+
   text-align: center;
+
   border-radius: 2px;
   border-bottom: 2px solid green;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: var(--basic-green);
 }
+.btn-buy:hover{
+  background-color: var(--special-green);
+}
+.btn-buy:active{
+  background-color: var(--special-dark-green);
+}
 .btn-wish-list{
   width: 135px;
   height: 38px;
   padding: 9px 0;
+
   text-align: center;
   color: var(--basic-gray);
+
   border: 2px solid var(--basic-green);
   border-radius: 2px;
 }
-.catalog-nav li a{
-  font-size: 13px;
+.btn-wish-list:hover{
+  color: var(--basic-gray);
+  border: 2px solid var(--basic-gray);
+}
+.btn-wish-list:active{
+  color: var(--basic-light-gray);
+  border: 2px solid var(--basic-light-gray);
+}
+.catalog-nav a{
   padding: 10px 15px;
-  border: 1px solid var(--special-greylight);
-  border-radius: 4px;
   margin-left: 10px;
+
+  font-size: 13px;
   text-transform: uppercase;
   color: var(--basic-black);
+
+  border: 1px solid var(--special-greylight);
+  border-radius: 4px;
 }
-.catalog-nav li a:hover{
+.catalog-nav a:hover{
   border: 1px solid var(--special-light-grey);
 }
-.catalog-nav li a:focus{
+.catalog-nav a:focus{
   border: 1px solid var(--basic-red);
 }
-.catalog-nav li a:active{
-  border: none;
+.catalog-nav a:active{
   color: var(--basic-white);
+
+  border: none;
   background-color: var(--basic-red);
 }
 .about-our-product{
   padding: 64px 0 68px;
+
   background-color: var(--basic-light-gray);
 }
 .about-our-product h2{
-  font-weight: normal;
   font-size: 30px;
+  font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
 }
 .about-our-product p{
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
