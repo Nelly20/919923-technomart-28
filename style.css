@@ -136,9 +136,6 @@ ul li{
   font-size: 18px;
   color: var(--basic-white);
 }
-.user-nav a:hover{
-  color: var(--basic-white);
-}
 .user-nav a:active{
   color: var(--special-light-grey);
   background-color: var(--special-darkblue);
