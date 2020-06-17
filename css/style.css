@@ -112,9 +112,10 @@ ul li{
   background-color: var(--basic-light-gray);
 }
 .nav-wrapper{
+  height: 36px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .user-nav{
   background-color: var(--basic-dark-gray);
@@ -126,7 +127,7 @@ ul li{
 }
 .user-nav a{
   padding: 9px 24px 9px 43px;
-
+  margin: 0;
   font-size: 18px;
   color: var(--basic-white);
 }
@@ -251,11 +252,13 @@ ul li{
   padding: 0;
 }
 .category-item{
-  padding: 5px 43px 21px 23px;
+  padding: 5px 43px 32px 23px;
   
   color: var(--basic-white);
 }
 .category-item h3{
+  margin-bottom: 14px;
+
   font-size: 24px;
   font-weight: bold;
 }
@@ -286,6 +289,7 @@ ul li{
   width: 135px;
   height: 38px;
   padding: 9px 5px;
+  margin: 0;
 
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -626,9 +630,8 @@ ul li{
   flex-wrap: wrap;
 }
 .shopping-cart{
-  padding: 9px 21px 9px 35px;
-
   font-size: 18px;
+  text-transform: capitalize;
   
   background-color: var(--basic-red);
 }
