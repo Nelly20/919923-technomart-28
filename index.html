@@ -13,9 +13,9 @@
     	<div class="user-nav">
     		<div class="container nav-wrapper">
     			<a href="index.html" class="logo"><img src="images/logo.svg" width="220" height="47" alt="Техномарт"></a>
-		    	<input class="search" type="search" name="search" placeholder="Поиск">
-		    	<a href="#">Закладки: 0</a>
-		    	<a href="#">Корзина: 0</a>
+		    	<input type="search" name="search" placeholder="Поиск">
+		    	<a href="#" class="book-mark">Закладки: 0</a>
+		    	<a href="#" class="shopping-cart-empty">Корзина: 0</a>
 		    	<a href="#" class="btn btn-green">Оформить заказ</a>
     		</div>
     	</div>
@@ -32,7 +32,7 @@
 	    		</div>
 	    		
 	    		<div class="sign-in">
-	    			<a href="#">Войти</a>
+	    			<a href="#" class="enter">Войти</a>
 	    			<a href="#">Регистрация</a>
 	    		</div>
 	    	</div>
@@ -71,6 +71,7 @@
     	<section class=" container">
     		<ul class="categories">
     			<li class="category-item category-first">
+    				<div class="new"></div>
     				<h3>Материалы</h3>
     				<a href="#" class="btn btn-white">на любой вкус</a>
     			</li>
@@ -82,7 +83,7 @@
     				<h3>Техника</h3>
     				<a href="#" class="btn btn-white">для стройки</a>
     			</li>
-    			<li class="slide firs-slide">
+    			<li class="slide first-slide">
     				<h3>Перфораторы</h3>
 					<p>Настоящие мужские игрушки</p>
 					<a href="catalog.html" class="btn btn-red">Открыть каталог</a>
@@ -193,18 +194,22 @@
 					</ul>
 
 					<ul>
-						<li class="first-service service-item">
+						<li class="delivery service-item visually-hidden">
 							<h3>Доставка</h3>
 							<p class="service-title">Мы с удовольствием доставим ваш товар прямо <br>
 			к вашему подъезду совершенно бесплатно!<br>
 			Ведь мы неплохо заработаем, <br>
 			поднимая его на ваш этаж!</p>
 						</li>
-						<li class="second-service service-item visually-hidden">
+						<li class="quarantee service-item">
 							<h3>Гарантия</h3>
-							<p class="service-title">Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж восстановите как-нибудь сами.</p>
+							<p class="service-title">Если купленный у нас товар поломается или заискрит, <br>
+							а также в случае пожара, спровоцированного его<br> 
+							возгоранием,  вы всегда можете быть уверены в нашей <br>
+							гарантии. Мы обменяем сгоревший товар на новый.<br>
+							 Дом уж восстановите как-нибудь сами.</p>
 						</li>
-						<li class="third-service service-item visually-hidden">
+						<li class="credit service-item visually-hidden">
 							<h3>Кредит  </h3>
 							<p class="service-title">Залезть в долговую яму стало проще!  Кредитные консультанты придут вам на помощь.</p>
 							<button type="button" class="btn btn-credit">Отправить заявку</button>
@@ -290,13 +295,13 @@
     			    </div>
     				<ul class="social-set">
 	    				<li>
-	    					<a href="#" class="">Вконтакте</a>
+	    					<a href="#" class="vk-icon" aria-label="Вконтакте"></a>
 	    				</li>
 	    				<li>
-	    					<a href="#">Фейсбук</a>
+	    					<a href="#" class="fb-icon" aria-label="Фейсбук"></a>
 	    				</li>
 	    				<li>
-	    					<a href="#">Инстаграм</a>
+	    					<a href="#" class="insta-icon" aria-label="Инстаграм"></a>
 	    				</li>
     				</ul>
 	    			<p>Обратная связь: <br> <a href="mailto:mail@htmlacademy.ru" class="yellow-link">mail@htmlacademy.ru</a></p>
