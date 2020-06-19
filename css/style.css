@@ -108,6 +108,7 @@ ul li{
 .btn-red:active{
   background-color: var(--special-red);
 }
+
 /*Header*/
 .page-header{
   background-color: var(--basic-light-gray);
