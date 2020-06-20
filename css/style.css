@@ -125,6 +125,11 @@ ul li{
 .logo img:hover{
   opacity: 0;
 }
+.logo:hover{
+  background-image: url(images/logo-active.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .user-nav ul{
   display: flex;
   align-items: center;
@@ -155,6 +160,18 @@ ul li{
   background-position: left 0;
   border: none;
   background-color: var(--basic-dark-gray);
+}
+.user-nav input::-webkit-input-placeholder{
+ color: var(--basic-white);
+}
+.user-nav input::-moz-placeholder{ 
+  color: var(--basic-white); 
+} /* Firefox 19+ */
+.user-nav input:-moz-placeholder{ 
+  color: var(--basic-white);
+} /* Firefox 18- */
+.user-nav input:-ms-input-placeholder{
+ color: var(--basic-white);
 }
 .user-nav input:hover{
   background-image: url(../images/icon-search-hover.svg);
@@ -993,6 +1010,9 @@ ul li{
   background-repeat: no-repeat;
   background-position: left center;
 }
+.checkbox-item:hover{
+  background-image: url(../images/checkbox-on-hover.svg);
+}
 .checkbox-item input,
 .radio-item input{
   position: absolute;
@@ -1016,6 +1036,9 @@ ul li{
   background-image: url(../images/radio-on.svg);
   background-repeat: no-repeat;
   background-position: left center;
+}
+.radio-item:hover{
+  background-image: url(../images/radio-on-hover.svg);
 }
 .btn-filter{
   padding: 10px 80px;
