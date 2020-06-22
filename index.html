@@ -16,7 +16,7 @@
 		    	<input type="search" name="search" placeholder="Поиск">
 		    	<a href="#" class="book-mark">Закладки: 0</a>
 		    	<a href="#" class="shopping-cart-empty">Корзина: 0</a>
-		    	<a href="#" class="btn btn-green">Оформить заказ</a>
+		    	<a href="#" class="btn-green">Оформить заказ</a>
     		</div>
     	</div>
     	
@@ -73,14 +73,17 @@
     			<li class="category-item category-first">
     				<h3>Материалы</h3>
     				<a href="#" class="btn btn-white">на любой вкус</a>
+    				<div class="new-category"></div>
     			</li>
     			<li class="category-item category-second">
     				<h3>Инструмент</h3>
     				<a href="#" class="btn btn-white">На все случаи</a>
+    				<div class="new-category visually-hidden"></div>
     			</li>
     			<li class="category-item category-third">
     				<h3>Техника</h3>
     				<a href="#" class="btn btn-white">для стройки</a>
+    				<div class="new-category visually-hidden"></div>
     			</li>
     			<li class="slide first-slide">
     				<h3>Перфораторы</h3>
@@ -91,14 +94,18 @@
 					<h3>Дрели</h3>
 					<p>Соседям на радость!</p>
 					<a href="catalog.html" class="btn btn-red">Открыть каталог</a>
+					<button type="button" class="arrow-left" aria-label="стрелка-назад"></button>
+					<button type="button" class="arrow-right" aria-label="стрелка-вперед"></button>
 				</li>
 				<li class="category-item category-fourth">
     				<h3>Скидки 50%</h3>
     				<a href="#" class="btn btn-white">На 350 товаров</a>
+    				<div class="new-category visually-hidden"></div>
     			</li>
     			<li class="category-item category-fifth">
     				<h3>Доставка</h3>
     				<a href="#" class="btn btn-white">Бесплатно</a>
+    				<div class="new-category visually-hidden"></div>
     			</li>
     		</ul>
     	</section>
@@ -111,35 +118,48 @@
     		
     		<ul class="products">
     			<li class="product-item">
-    				<h3>Перфоратор BOSCH  BFG 9000</h3>
 					<img src="images/perforator-1.jpg" alt="Перфоратор BOSCH  BFG 9000" width="184" height="164">
-					<p class="old-price">32500 Р.</p>
-					<p class="new-price">25500 Р.</p>
-					<a href="#" class="visually-hidden">Купить</a>
-                    <a href="#" class="visually-hidden">В закладки</a>
+					<div class="product-info">
+						<h3>Перфоратор BOSCH  BFG 9000</h3>
+						<p class="old-price">32500 Р.</p>
+						<p class="new-price">25500 Р.</p>
+						<a href="#" class="visually-hidden">Купить</a>
+	                    <a href="#" class="visually-hidden">В закладки</a>
+                    </div>
+                    <div class="new-product"></div>
     			</li>
 				<li class="product-item">
-    				<h3>Перфоратор BOSCH  BFG 3000</h3>
 					<img src="images/perforator-2.jpg" alt="Перфоратор BOSCH  BFG 3000" width="127" height="112">
-					<p class="old-price">22500 Р.</p>
-					<p class="new-price">15500 Р.</p>
-					<a href="#" class="visually-hidden">Купить</a>
-                    <a href="#" class="visually-hidden">В закладки</a>
+					<div class="product-info">
+						<h3>Перфоратор BOSCH  BFG 3000</h3>
+						<p class="old-price">22500 Р.</p>
+						<p class="new-price">15500 Р.</p>
+						<a href="#" class="visually-hidden">Купить</a>
+	                    <a href="#" class="visually-hidden">В закладки</a>
+                    </div>
+                    <div class="new-product"></div>
     			</li>
     			<li class="product-item">
-    				<h3>Перфоратор BOSCH  BFG 6000</h3>
 					<img src="images/perforator-3.jpg" alt="Перфоратор BOSCH  BFG 6000" width="144" height="128">
-					<p class="old-price">30500 Р.</p>
-					<p class="new-price">25500 Р.</p>
-					<a href="#" class="visually-hidden">Купить</a>
-                    <a href="#" class="visually-hidden">В закладки</a>
+					<div class="product-info">
+						<h3>Перфоратор BOSCH  BFG 6000</h3>
+						<p class="old-price">30500 Р.</p>
+						<p class="new-price">25500 Р.</p>
+						<a href="#" class="visually-hidden">Купить</a>
+	                    <a href="#" class="visually-hidden">В закладки</a>
+                    </div>
+                    <div class="new-product"></div>
     			</li>
     			<li class="product-item">
-					<h3>Перфоратор BOSCH  BFG 2000</h3>
 					<img src="images/perforator-4.jpg" alt="Перфоратор BOSCH  BFG 2000" width="127" height="112">
-					<p class="new-price">12500 Р.</p>
-					<a href="#" class="visually-hidden">Купить</a>
-                    <a href="#" class="visually-hidden">В закладки</a>
+					<div class="product-info">
+						<h3>Перфоратор BOSCH  BFG 2000</h3>
+						<p class="old-price">30500 Р.</p>
+						<p class="new-price">12500 Р.</p>
+						<a href="#" class="visually-hidden">Купить</a>
+	                    <a href="#" class="visually-hidden">В закладки</a>
+                    </div>
+                    <div class="new-product"></div>
     			</li>
     		</ul>
     	</section>
@@ -158,10 +178,10 @@
     				<a href="#"><img src="images/makita.png" alt="Makita" width="123" height="40"></a>
     			</li>
     			<li class="brand-item">
-    				<a href="#"><img src="images/interskol.png" alt="Интерскол" width="146" height="44"></a>
+    				<a href="#"><img src="images/dewalt.png" alt="Dewalt" width="146" height="34"></a>
     			</li>
     			<li class="brand-item">
-    				<a href="#"><img src="images/dewalt.png" alt="Dewalt" width="200" height="88"></a>
+    				<a href="#"><img src="images/interskol.png" alt="Интерскол" width="146" height="44"></a>
     			</li>
     			<li class="brand-item">
     				<a href="#"><img src="images/hitachi.png" alt="Hitachi" width="169" height="31"></a>
@@ -195,12 +215,12 @@
 					<ul>
 						<li class="delivery service-item visually-hidden">
 							<h3>Доставка</h3>
-							<p class="service-title">Мы с удовольствием доставим ваш товар прямо <br>
+							<p class="service-title">Мы с удовольствием доставим ваш товар прямо<br>
 			к вашему подъезду совершенно бесплатно!<br>
-			Ведь мы неплохо заработаем, <br>
+			Ведь мы неплохо заработаем,<br>
 			поднимая его на ваш этаж!</p>
 						</li>
-						<li class="quarantee service-item">
+						<li class="quarantee service-item visually-hidden">
 							<h3>Гарантия</h3>
 							<p class="service-title">Если купленный у нас товар поломается или заискрит, <br>
 							а также в случае пожара, спровоцированного его<br> 
@@ -208,9 +228,10 @@
 							гарантии. Мы обменяем сгоревший товар на новый.<br>
 							 Дом уж восстановите как-нибудь сами.</p>
 						</li>
-						<li class="credit service-item visually-hidden">
+						<li class="credit service-item">
 							<h3>Кредит  </h3>
-							<p class="service-title">Залезть в долговую яму стало проще!  Кредитные консультанты придут вам на помощь.</p>
+							<p class="service-title">Залезть в долговую яму стало проще!  <br>
+							Кредитные консультанты придут вам на помощь.</p>
 							<button type="button" class="btn btn-credit">Отправить заявку</button>
 						</li>
 					</ul>
@@ -223,11 +244,11 @@
     	<section class="about-company container">
 			<div class="about-us">
 			    <h2>Компания «Техномарт»</h2>
-	    		<p class="service-title">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
+	    		<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
 	    		 ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
 	    		  гастарбайтерах.</p>
 
-				<p class="service-title">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+				<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 				Техномарт работает со многими транспортными компаниями:</p>
 				<ul class="list-companies">
 					<li>Деловые линии</li>
@@ -239,9 +260,9 @@
 
     		<div class="contacts">
     			<h2>Контакты</h2>
-    			<p class="service-title">Вы можете забрать товар сами, <br>
+    			<p>Вы можете забрать товар сами, <br>
 заехав в наш офис:</p>
-				<img src="images/map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 ">
+				<img class="map" src="images/map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 ">
 				<a href="#" class="btn btn-red">Заблудились? Напишите нам!</a>
 			</div>
     	</section>
@@ -267,7 +288,7 @@
     		<div class="footer-info">
     			<div class="address">
 	    			<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </address>
-	    			<a href="+78125550555">+7 (812) 555-05-55</a>
+	    			<a href="+78125550555" class="footer-phone-number">+7 (812) 555-05-55</a>
     			</div>
     			<ul class="nav-items">
     				<li>
@@ -291,7 +312,7 @@
 	    				<p>© 2010–2019 Компания «Техномарт» </p>
 	    			    <p>Все права защищены</p>
     			    </div>
-    				<ul class="social-set">
+    				<ul>
 	    				<li>
 	    					<a href="#" class="vk-icon" aria-label="Вконтакте"></a>
 	    				</li>
@@ -310,19 +331,31 @@
     </footer>
 
     <!--  Напишите нам -->
-    <section class="modal">
-    	<form action="https://echo.htmlacademy.ru" method="post">
-    		<button type="button">закрыть</button>
-    		<label for="name">Ваше имя:</label>
-    		<input type="text" name="name" placeholder="Имя Фамилия" id="name">
+    <section class="container visually-hidden">
+    	<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+    		<button type="button" class="btn-close" aria-label="закрыть"></button>
 
-    		<label for="email">Ваш e-mail:</label>
-    		<input type="email" name="email" placeholder="email@example.com" id="email">
+    		<div class="input-wrapper">
+				<div class="input-item">
+					<div>
+			    		<label for="name">Ваше имя:</label><br>
+			    		<input type="text" name="name" placeholder="Имя Фамилия" id="name">
+		    		</div>
 
-    		<label for="text">Текст письма:</label>
-    		<textarea rows="1" name="text" id="text" placeholder="В свободной форме"></textarea>
+		    		<div>
+			    		<label for="email">Ваш e-mail:</label><br>
+			    		<input type="email" name="email" placeholder="email@example.com" id="email">
+		    		</div>
+	    		</div>
 
-    		<button type="submit">Оформить заказ</button>
+	    		<div>
+		    		<label for="text">Текст письма:</label><br>
+		    		<textarea rows="1" name="text" id="text" placeholder="В свободной форме"></textarea>
+	    		</div>
+    		</div>
+    		<div class="btn-submit">
+    			<button type="submit" class="btn btn-red">Отправить</button>
+    		</div>
     	</form>
     </section>
 
