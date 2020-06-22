@@ -863,6 +863,7 @@ ul li{
 }
 .copyrights p{
   margin: 0;
+  margin-left: 6px;
   padding: 0;
 }
 .vk-icon{
@@ -870,8 +871,8 @@ ul li{
   content: "";
   width: 44px;
   height: 44px;
-  top: -8px;
-  left: 340px;
+  top: 14px;
+  left: 394px;
 
   background-image: url(../images/vk-icon.svg);
   background-repeat: no-repeat;
@@ -881,8 +882,8 @@ ul li{
   content: "";
   width: 44px;
   height: 44px;
-  top: -8px;
-  left: 385px;
+  top: 14px;
+  left: 439px;
 
   background-image: url(../images/fb-icon.svg);
   background-repeat: no-repeat;
@@ -893,8 +894,8 @@ ul li{
   content: "";
   width: 44px;
   height: 44px;
-  top: -8px;
-  left: 430px;
+  top: 14px;
+  left: 484px;
 
   background-image: url(../images/insta-icon.svg);
   background-repeat: no-repeat;
@@ -905,7 +906,9 @@ ul li{
 .yellow-link:active{
   color: var(--basic-red);
 }
-
+.mail-link{
+  margin-left: 252px;
+}
 /*CATALOG*/
 .catalog-info{
   display: flex;
