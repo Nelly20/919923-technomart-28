@@ -12,7 +12,7 @@
     <header class="page-header">
     	<div class="user-nav">
     		<div class="container nav-wrapper">
-    			<a href="index.html" class="logo"><img src="images/logo.svg" width="220" height="47" alt="Техномарт"></a>
+    			<a href="index.html" class="logo"><img src="images/logo.svg" width="108" height="18" alt="Техномарт"></a>
 		    	<input type="search" name="search" placeholder="Поиск">
 		    	<a href="#" class="book-mark">Закладки: 0</a>
 		    	<a href="#" class="shopping-cart-empty">Корзина: 0</a>
@@ -123,8 +123,8 @@
 						<h3>Перфоратор BOSCH  BFG 9000</h3>
 						<p class="old-price">32500 Р.</p>
 						<p class="new-price">25500 Р.</p>
-						<a href="#" class="btn btn-buy visually-hidden">Купить</a>
-                        <a href="#" class="btn btn-wish-list visually-hidden">В закладки</a>
+						<a href="#" class="btn btn-buy">Купить</a>
+                        <a href="#" class="btn btn-wish-list">В закладки</a>
                     </div>
                     <div class="new-product"></div>
     			</li>
@@ -262,7 +262,7 @@
     			<h2>Контакты</h2>
     			<p>Вы можете забрать товар сами, <br>
 заехав в наш офис:</p>
-				<img class="map-img" src="images/map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 ">
+				<a href="https://goo.gl/maps/pppwAEMLTx2eTJ3J7"><img class="map-img" src="images/map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 "></a>
 				<a href="#" class="btn btn-red">Заблудились? Напишите нам!</a>
 			</div>
     	</section>
@@ -331,36 +331,36 @@
     </footer>
 
     <!--  Напишите нам -->
-    <section class="container visually-hidden">
-    	<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-    		<button type="button" class="btn-close btn-close-write-us" aria-label="закрыть"></button>
+    <section class="container modal visually-hidden">
+		<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+		<button type="button" class="btn-close btn-close-write-us" aria-label="закрыть"></button>
 
-    		<div class="input-wrapper">
-				<div class="input-item">
-					<div>
-			    		<label for="name">Ваше имя:</label><br>
-			    		<input type="text" name="name" placeholder="Имя Фамилия" id="name">
-		    		</div>
-
-		    		<div>
-			    		<label for="email">Ваш e-mail:</label><br>
-			    		<input type="email" name="email" placeholder="email@example.com" id="email">
-		    		</div>
+		<div class="input-wrapper">
+			<div class="input-item">
+				<div>
+		    		<label for="name">Ваше имя:</label><br>
+		    		<input type="text" name="name" placeholder="Имя Фамилия" id="name">
 	    		</div>
 
 	    		<div>
-		    		<label for="text">Текст письма:</label><br>
-		    		<textarea rows="1" name="text" id="text" placeholder="В свободной форме"></textarea>
+		    		<label for="email">Ваш e-mail:</label><br>
+		    		<input type="email" name="email" placeholder="email@example.com" id="email">
 	    		</div>
     		</div>
-    		<div class="btn-submit">
-    			<button type="submit" class="btn btn-red">Отправить</button>
+
+    		<div>
+	    		<label for="text">Текст письма:</label><br>
+	    		<textarea rows="1" name="text" id="text" placeholder="В свободной форме"></textarea>
     		</div>
-    	</form>
+		</div>
+		<div class="btn-submit">
+			<button type="submit" class="btn btn-red">Отправить</button>
+		</form>
+    	</div>
     </section>
 
     <!-- карта -->
-    <section class="map-modal visually-hidden">
+    <section class="map-modal container modal visually-hidden">
     	<button type="button" class="btn-close btn-map-close" aria-label="закрыть"></button>
     	<img src="images/map-popup.png" alt="карта">
     </section>

@@ -27,12 +27,13 @@
   --special-blue: #293449;
   --special-purple: #DC91D8;
   --special-light-grey: #C5C5C5;
-  --special-light: #F9F5F0;
+  --special-light: #F9F5F0;   
   --special-grey: #A9A9A9;
   --special-grey-light:#F7F3EC;
   --special-greylight: #E5E5E5;
   --special-icon-color: #212A3A;
   --special-modal-color: #F4F4F4;
+  --special-dark-red: #8D1E26;
 }
 
 /*Global*/
@@ -83,9 +84,6 @@ input[type="radio"].visually-hidden{
 }
 ul li{
   list-style: none;
-}
-.modal{
-  display: none;
 }
 .new-product{
   position: absolute;
@@ -145,19 +143,19 @@ ul li{
   background-color: var(--basic-dark-gray);
 }
 .logo img{
-  margin-top: 9px;
+  display: block;
+  margin: auto;
+}
+.logo{
   margin-right: 17px;
+  padding: 12px 57px 12px 55px;
+  border-bottom: 5px solid var(--special-red);
+  background-color: var(--basic-red);
 }
-.logo img:hover{
-  opacity: 0;
-}
-.logo:hover{
-  position: relative;
-  top: 10px;
-  left: 0;
-
-  background-image: url(../images/logo-active.svg);
-  background-repeat: no-repeat;
+.nav-wrapper .logo:hover,
+.nav-wrapper .logo:active{
+  border-bottom: 5px solid var(--special-dark-red);
+  background-color: var(--special-red);
 }
 .user-nav ul{
   display: flex;
@@ -227,7 +225,6 @@ ul li{
 .shopping-cart-empty{
   padding: 9px 24px 9px 43px;
   
-
   background-image: url(../images/icon-cart.svg);
   background-repeat: no-repeat;
   background-position: 20px 12px;
@@ -521,8 +518,6 @@ ul li{
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   width: 220px;
   padding: 0 18px 21px 18px;
   
@@ -546,6 +541,8 @@ ul li{
   color: var(--basic-black);
 }
 .product-item img{
+  display: block;
+  margin: auto;
 }
 .old-price{
 
@@ -1023,7 +1020,7 @@ ul li{
   background-color: var(--basic-light-gray);
 }
 .products-catalog{
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 .products-catalog aside{
   width: 220px;
@@ -1063,7 +1060,7 @@ ul li{
 .range-controls{
   position: relative;
   height: 41px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding-top: 39px;
   padding-bottom: 39px;
   padding-left: 20px;
@@ -1076,7 +1073,7 @@ ul li{
   width: 70%;
   height: 2px;
 
-  background-color: var(--basic-green);
+  background-color: var(--special-light-green);
 }
 .range-controls .scale{
   height: 2px;
@@ -1103,7 +1100,8 @@ ul li{
 .range-controls .max-toggle{
   left: 18px;
   }
-.max-price input[type="number"], .min-price input[type="number"]{
+.max-price input[type="number"],
+.min-price input[type="number"]{
   width: 100px;
   padding: 10px 0;
 
@@ -1114,6 +1112,9 @@ ul li{
   border: none;
   background-color: var(--special-grey-light);
 }
+.price-controls{
+
+}
 .filter-label{
   font-size: 15px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1123,7 +1124,7 @@ ul li{
   display: flex;
 }
 .checkbox-item{
-  padding-left: 40px;
+  padding-left: 36px;
   background-image: url(../images/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: left center;
@@ -1174,15 +1175,16 @@ ul li{
   border: 1px solid var(--basic-gray);
 }
 .products-section{
-  margin-top: 13px;
+  margin-top: -5px;
 }
 .filters{
+  position: relative;
   padding: 0;
   background-color: var(--special-grey-light);
 }
 .filters-title{
   display: inline-block;
-  padding: 10px 140px 10px 20px;
+  padding: 9px 140px 9px 20px;
   margin: 0;
 
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1194,7 +1196,7 @@ ul li{
   background-color: var(--special-grey-light);
 }
 .filters a{
-  margin-right: 40px;
+  margin-right: 60px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -1215,6 +1217,46 @@ ul li{
 .filters a:active{
   color: var(--basic-red);
   border-bottom: none;
+}
+.filters .arrow-up{
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 10px;
+  top: 16px;
+  left: 640px;
+
+  border: none;
+  background-image: url(../images/arrow-up.png);
+  background-repeat: no-repeat;
+}
+.filters .arrow-up:hover{
+  border: none;
+  background-image: url(../images/arrow-up-hover.png);
+}
+.filters .arrow-up:active{
+  border: none;
+  background-image: url(../images/arrow-up-active.png);
+}
+.filters .arrow-down{
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 10px;
+  top: 16px;
+  left: 672px;
+
+  border: none;
+  background-image: url(../images/arrow-down.png);
+  background-repeat: no-repeat;
+}
+.filters .arrow-down:hover{
+  border: none;
+  background-image: url(../images/arrow-down-hover.png);
+}
+.filters .arrow-down:active{
+  border: none;
+  background-image: url(../images/arrow-down-active.png);
 }
 .popular-catalog{
   display: grid;
@@ -1268,12 +1310,13 @@ ul li{
 .catalog-nav{
   display: flex;
   padding: 0;
-  margin-top: 48px;
+  margin-top: 58px;
 }
 .catalog-nav a{
   padding: 10px 15px;
-  margin-left: 10px;
+  margin-right: 10px;
 
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   color: var(--basic-black);
@@ -1294,31 +1337,37 @@ ul li{
   background-color: var(--basic-red);
 }
 .about-our-product{
-  padding: 64px 0 68px;
+  padding: 64px 0 56px;
 
   background-color: var(--basic-light-gray);
 }
 .about-our-product h2{
+  margin: 0;
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
 }
 .about-our-product p{
+  margin-top: 24px;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
 /*Modals*/
+.modal{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
 .write-us{
   width: 620px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  position: absolute;
-  top: 2470px;
-  left: 355px;
 
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   border-top: 5px solid var(--basic-red);
@@ -1390,12 +1439,6 @@ ul li{
 .map-modal{
   width: 943px;
   height: 449px;
-  padding: 0;
-  margin: 0 auto;
-  display: block;
-  position: absolute;
-  top: 2370px;
-  left: 195px;
 
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   border-top: 5px solid var(--basic-red);
@@ -1413,9 +1456,6 @@ ul li{
   width: 620px;
   height: 283px;
   padding: 0;
-  position: absolute;
-  top: 656px;
-  left: 380px;
 
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   border-top: 5px solid var(--basic-red);

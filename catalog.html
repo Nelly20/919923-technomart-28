@@ -13,7 +13,7 @@
         <div class="user-nav">
             <div class="user-nav">
             <div class="container nav-wrapper">
-                <a href="index.html" class="logo"><img src="images/logo.svg" width="220" height="47" alt="Техномарт"></a>
+                <a href="index.html" class="logo"><img src="images/logo.svg" width="108" height="18" alt="Техномарт"></a>
                 <input type="search" name="search" placeholder="Поиск">
                 <a href="#" class="book-mark">Закладки: 0</a>
                 <a href="#" class="shopping-cart-full shopping-cart-empty">Корзина: 0</a>
@@ -159,8 +159,8 @@
                         <a href="#">По цене</a>
                         <a href="#">По типу</a>
                         <a href="#">По функционалу</a>
-                        <a href="#" aria-label="Стрелка"></a>
-                        <a href="#" aria-label="Стрелка"></a>
+                        <a href="#" aria-label="Стрелка" class="arrow-up"></a>
+                        <a href="#" aria-label="Стрелка" class="arrow-down"></a>
                     </div>
 
                     <section >
@@ -265,13 +265,17 @@
                                 <div class="new-product"></div>
                             </li>
                         </ul>
-                        <h2 class="visually-hidden">Навигация по каталогу</h2>
-                        <ul class="catalog-nav">
+
+                        <div>
+                            <h2 class="visually-hidden">Навигация по каталогу</h2>
+                            <ul class="catalog-nav">
                             <li><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">Следующая</a></li>
                         </ul>
+                        </div>
+                        
                     </section>
                 </div>
             </div>
@@ -349,7 +353,7 @@
 
 
     <!-- Товар добавлен в корзину -->
-    <section class="cart-modal visually-hidden">
+    <section class="cart-modal container modal">
         <button type="button" class="btn-close btn-cart-close" aria-label="Закрыть"></button>
         <p>Товар добавлен в корзину!</p>
 
