@@ -176,7 +176,7 @@ ul li{
 }
 .user-nav input{
   padding-left: 25px;
-  margin-right: 68px;
+  margin-right: 67px;
 
   font-size: 18px;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -239,7 +239,7 @@ ul li{
 }
 .user-nav .btn-green{
   padding: 9px 16px 9px 19px;
-  
+
   font-size: 18px;
   text-transform: none;
 
@@ -929,14 +929,15 @@ ul li{
   align-items: baseline;
 }
 .shopping-cart-full{
-  padding: 9px 28px 9px 43px;
-  
+  padding: 9px 24px 9px 34px;
+  margin-left: 9px;
+
   font-size: 18px;
   text-transform: capitalize; 
 
   background-image: url(../images/icon-cart.svg);
   background-repeat: no-repeat;
-  background-position: 20px 12px;
+  background-position: 12px 12px;
   background-color: var(--basic-red);
 }
 .personal-cabinet{
