@@ -34,6 +34,7 @@
   --special-icon-color: #212A3A;
   --special-modal-color: #F4F4F4;
   --special-dark-red: #8D1E26;
+  --special-btn-color: #98A0AD;
 }
 
 /*Global*/
@@ -145,6 +146,7 @@ ul li{
 .logo img{
   display: block;
   margin: auto;
+  background-color: rgba(0, 0, 0, 0);
 }
 .logo{
   margin-right: 17px;
@@ -223,6 +225,7 @@ ul li{
 }
 .shopping-cart-empty{
   padding: 9px 24px 9px 43px;
+  margin-right: 3px;
   
   background-image: url(../images/icon-cart.svg);
   background-repeat: no-repeat;
@@ -926,10 +929,14 @@ ul li{
   align-items: baseline;
 }
 .shopping-cart-full{
-  padding: 9px 24px 9px 43px;
-  font-size: 18px;
-  text-transform: capitalize;
+  padding: 9px 28px 9px 43px;
   
+  font-size: 18px;
+  text-transform: capitalize; 
+
+  background-image: url(../images/icon-cart.svg);
+  background-repeat: no-repeat;
+  background-position: 20px 12px;
   background-color: var(--basic-red);
 }
 .personal-cabinet{
@@ -970,6 +977,9 @@ ul li{
   background-image: url(../images/dot.svg);
   background-repeat: no-repeat;
   background-position: center right;
+}
+.user-interface a:first-child:hover{
+  background-image: url(../images/dot-hover.svg);
 }
 .user-interface a:last-child{
   padding-left: 10px;
@@ -1314,16 +1324,16 @@ ul li{
   text-align: center;
   color: var(--basic-gray);
 
-  border: 2px solid var(--basic-green);
+  border: 3px solid var(--basic-green);
   border-radius: 2px;
 }
 .btn-wish-list:hover{
   color: var(--basic-gray);
-  border: 2px solid var(--basic-gray);
+  border: 3px solid var(--basic-gray);
 }
 .btn-wish-list:active{
-  color: var(--basic-light-gray);
-  border: 2px solid var(--basic-light-gray);
+  color: var(--special-btn-color);
+  border: 3px solid var(--special-btn-color);
 }
 .catalog-nav{
   display: flex;
