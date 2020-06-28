@@ -968,6 +968,9 @@ ul li{
 .user-interface{
   display: inline-block;
   margin: 0 auto;
+  padding: 0;
+  position: relative;
+  top: -3px;
 }
 .user-interface a{
   margin-top: 0;
