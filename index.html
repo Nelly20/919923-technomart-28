@@ -89,6 +89,8 @@
     				<h3>Перфораторы</h3>
 					<p>Настоящие мужские игрушки</p>
 					<a href="catalog.html" class="btn btn-red">Открыть каталог</a>
+					<button type="button" class="arrow-left" aria-label="стрелка-назад"></button>
+					<button type="button" class="arrow-right" aria-label="стрелка-вперед"></button>
 				</li>
 				<li class="slide second-slide visually-hidden">
 					<h3>Дрели</h3>
@@ -347,18 +349,20 @@
 			<div class="input-item">
 				<div>
 		    		<label for="name">Ваше имя:</label><br>
-		    		<input type="text" name="name" placeholder="Имя Фамилия" id="name">
+		    		<input type="text" name="name" placeholder="Имя Фамилия" id="name" required
+>
 	    		</div>
 
 	    		<div>
 		    		<label for="email">Ваш e-mail:</label><br>
-		    		<input type="email" name="email" placeholder="email@example.com" id="email">
+		    		<input type="email" name="email" placeholder="email@example.com" id="email" required
+>
 	    		</div>
     		</div>
 
     		<div>
 	    		<label for="text">Текст письма:</label><br>
-	    		<textarea rows="1" name="text" id="text" placeholder="В свободной форме"></textarea>
+	    		<textarea rows="1" name="text" id="text" placeholder="В свободной форме" required></textarea>
     		</div>
 		</div>
 		<div class="btn-submit">
