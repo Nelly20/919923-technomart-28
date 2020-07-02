@@ -91,10 +91,10 @@
                             <div class="range-filter">
                                 <div class="range-controls">
                                     <div class="scale">
-                                        <div class="bar" style="width: 30%; margin-left: 20%"></div>
+                                        <div class="bar" style="width: 73%; margin-left: 7%"></div>
                                     </div>
-                                    <div class="toggle min-toggle" tabindex="0" style="left: 20%"></div>
-                                    <div class="toggle max-toggle" tabindex="0" style="left: 50%"></div>
+                                    <div class="toggle min-toggle" tabindex="0" style="left: 7%"></div>
+                                    <div class="toggle max-toggle" tabindex="0" style="left: 73%"></div>
                                 </div>
                                 <div class="price-controls">
                                     <label class="min-price">
@@ -110,47 +110,56 @@
                         <fieldset class="filter-item checkbox">
                             <legend class="filter-title">Производители:</legend>
 
-                            <div class="checkbox-item">
-                                <input type="checkbox" name="bosh" id="filter-bosh" checked>
-                                <label for="filter-bosh" class="filter-label">Bosh</label>
-                            </div>
+                            <ul>
+                                <li class="checkbox-item filter-option filter-checkbox">
+                                    <input type="checkbox" name="bosh" id="filter-bosh" class="filter-input-checkbox visually-hidden filter-input" checked>
+                                    <label for="filter-bosh" class="filter-label">Bosh</label>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="checkbox-item filter-option filter-checkbox">
+                                    <input type="checkbox" name="interskol" id="filter-interskol" class="filter-input-checkbox visually-hidden" disabled>
+                                    <label for="filter-interskol" class="filter-label">Интерскол</label>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="checkbox-item filter-option filter-checkbox">
+                                    <input type="checkbox" name="makita" id="filter-makita" class="filter-input-checkbox visually-hidden">
+                                    <label for="filter-makita" class="filter-label">Makita</label>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="checkbox-item filter-option filter-checkbox">
+                                    <input type="checkbox" name="dewalt" id="filter-dewalt" class="filter-input-checkbox visually-hidden">
+                                    <label for="filter-dewalt" class="filter-label">Dewalt</label>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="checkbox-item filter-option filter-checkbox">
+                                    <input type="checkbox" name="hitachi" id="filter-hitachi" class="filter-input-checkbox visually-hidden">
+                                    <label for="filter-hitachi" class="filter-label">Hitachi</label>
+                                </li>
+                            </ul>
 
-                            <div class="checkbox-item">
-                                <input type="checkbox" name="interskol" id="filter-interskol">
-                                <label for="filter-interskol" class="filter-label">Интерскол</label>
-                            </div>
-
-                            <div class="checkbox-item">
-                                <input type="checkbox" name="makita" id="filter-makita" checked>
-                                <label for="filter-makita" class="filter-label">Makita</label>
-                            </div>
-
-                            <div class="checkbox-item">
-                                <input type="checkbox" name="dewalt" id="filter-dewalt">
-                                <label for="filter-dewalt" class="filter-label">Dewalt</label>
-                            </div>
-
-                            <div class="checkbox-item">
-                                <input type="checkbox" name="hitachi" id="filter-hitachi">
-                                <label for="filter-hitachi" class="filter-label">Hitachi</label>
-                            </div>
                         </fieldset>
 
                         <fieldset class="filter-item radio">
                             <legend class="filter-title">Питание:</legend>
-
-                            <div class="radio-item">
-                                <input type="radio" name="aккумуляторные" id="filter-acumulator" checked>
-                                <label for="filter-acumulator" class="filter-label">Aккумуляторные</label>
-                            </div>
-
-                            <div class="radio-item">
-                                <input type="radio" name="cетевые" id="filter-net">
-                                <label for="filter-net" class="filter-label">Сетевые</label>
-                            </div>
+                            <ul>
+                                <li class="radio-item filter-option filter-checkbox">
+                                    <input class="visually-hidden filter-input-radio filter-input" type="radio" name="aккумуляторные" id="filter-acumulator" checked>
+                                    <label for="filter-acumulator" class="filter-label">Aккумуляторные</label>
+                                </li>
+                                <li class="radio-item filter-option filter-checkbox">
+                                    <input class="visually-hidden filter-input-radio filter-input" type="radio" name="cетевые" id="filter-net" >
+                                    <label for="filter-net" class="filter-label">Сетевые</label>
+                                </li>
+                            </ul>
                         </fieldset>
-
                         <button  type="submit" class="btn-filter">Показать</button>
+
+                        
+
                     </form>
                 </aside>
 

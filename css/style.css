@@ -904,6 +904,9 @@ ul li{
   justify-content: space-between;
   padding-bottom: 54px;
 }
+.footer-info ul{
+  margin-top: 15px;
+}
 .address address,
 .footer-phone-number{
   margin-top: 11px;
@@ -937,7 +940,6 @@ ul li{
 }
 .footer-copyright{
   display: flex;
-  padding: 20px 143px 20px 131px;
 
   background-color: var(--basic-dark-gray);
 }
@@ -951,6 +953,7 @@ ul li{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0 20px 0;
 }
 .copyrights p{
   margin: 0;
@@ -962,8 +965,8 @@ ul li{
   content: "";
   width: 44px;
   height: 44px;
-  top: 14px;
-  left: 394px;
+  top: 33px;
+  left: 390px;
 
   background-image: url(../images/vk-icon.svg);
   background-repeat: no-repeat;
@@ -973,8 +976,8 @@ ul li{
   content: "";
   width: 44px;
   height: 44px;
-  top: 14px;
-  left: 439px;
+  top: 33px;
+  left: 435px;
 
   background-image: url(../images/fb-icon.svg);
   background-repeat: no-repeat;
@@ -985,8 +988,8 @@ ul li{
   content: "";
   width: 44px;
   height: 44px;
-  top: 14px;
-  left: 484px;
+  top: 33px;
+  left: 480px;
 
   background-image: url(../images/insta-icon.svg);
   background-repeat: no-repeat;
@@ -1098,8 +1101,10 @@ ul li{
 }
 .bread-crumbs{
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
   padding: 0;
-  margin-left: 180px;
   margin-top: 17px;
 }
 .bread-crumbs a{
@@ -1112,6 +1117,7 @@ ul li{
 }
 .bread-crumbs li:first-child{
   padding-right: 15px;
+  padding-left: 0;
 
   background-image: url(../images/icon-home.svg), url(../images/icon-right-small.svg);
   background-repeat: no-repeat;
@@ -1140,7 +1146,7 @@ ul li{
 }
 .main-title{
   margin-top: 18px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   padding: 30px 0 30px 30px;
 
   font-size: 30px;
@@ -1175,7 +1181,7 @@ ul li{
   border: none;
 }
 .filter-title{
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -1185,7 +1191,10 @@ ul li{
 .range-filter{
   width: 220px;
   margin-top: 0px;
-  margin-bottom: 42px;
+  margin-bottom: 18px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid var(--special-greylight);
 }
 .range-controls{
   position: relative;
@@ -1249,42 +1258,208 @@ ul li{
 }
 .checkbox{
   display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 11px;
+
+  border-bottom: 1px solid var(--special-greylight);
 }
-.checkbox-item{
-  padding-left: 36px;
+.checkbox ul{
+  margin: 0;
+  margin-top: 5px;
+}
+.filter-option label {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  margin-left: -3px;
+  cursor: pointer;
+  user-select: none;
+}
+/*Чекбокс*/
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+
   background-image: url(../images/checkbox-off.svg);
   background-repeat: no-repeat;
-  background-position: left center;
 }
-.checkbox-item:hover{
-  background-image: url(../images/checkbox-on-hover.svg);
-}
-.checkbox-item input,
-.radio-item input{
+/*Чекбокс при наведении*/
+.filter-input-checkbox:hover + label::before {
+  content: "";
   position: absolute;
-  z-index: -1;
-  opacity: 0;
+  left: -35px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+
+  background-image: url(../images/checkbox-off-hover.svg);
+  background-repeat: no-repeat;
 }
-.checkbox-item, .radio-item{
-  margin-bottom: 17px;
+/*Чекбокс cheked*/
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  width: 22px;
+  height: 17px;
+  background-image: url(../images/checked.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.filter-input-checkbox:checked + label::before{
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../images/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+/*Чекбокс cheked при наведении*/
+.filter-input-checkbox:checked:hover + label::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  width: 22px;
+  height: 17px;
+  background-image: url(../images/checked-hover.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.filter-input-checkbox:checked:hover + label::before{
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../images/checkbox-on-hover.svg);
+  background-repeat: no-repeat;
+}
+/*Чекбокс disabeled*/
+.filter-input-checkbox:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 25px;
+  height: 25px;
+
+  
+  background-image: url(../images/checkbox-disabled.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.checkbox-item,
+.radio-item{
+  margin-bottom: 15px;
+}
+.radio legend{
+  margin-bottom: 25px;
 }
 .checkbox-item:last-child, 
 .radio-item:last-child{
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 .radio{
   display: flex;
+  margin-bottom: 23px;
 }
-.radio-item{
-  padding-left: 40px;
-  padding-bottom: 1px;
+.radio ul{
+  margin: 0;
+}
+/*Радио*/
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 25px;
+  height: 25px;
 
   background-image: url(../images/radio-off.svg);
   background-repeat: no-repeat;
-  background-position: left center;
 }
-.radio-item:hover{
+.filter-input-radio:hover + label::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 25px;
+  height: 25px;
+
+  background-image: url(../images/radio-off-hover.svg);
+  background-repeat: no-repeat;
+}
+/*Радио checked*/
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -31px;
+  width: 25px;
+  height: 17px;
+  background-image: url(../images/radio-check.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.filter-input-radio:checked + label::before{
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 25px;
+  height: 25px;
+
+  background-image: url(../images/radio-on.svg);
+  background-repeat: no-repeat;
+}
+/*Радио checked при наведении*/
+.filter-input-radio:checked + label::after{
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -31px;
+  width: 25px;
+  height: 17px;
+  background-image: url(../images/radio-check-hover.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.filter-input-radio:checked:hover + label::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 25px;
+  height: 25px;
+
   background-image: url(../images/radio-on-hover.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+/*Радио disabled*/
+.filter-input-radio:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 25px;
+  height: 25px;
+
+  
+  background-image: url(../images/radio-off-disabled.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .btn-filter{
   padding: 10px 80px;
@@ -1390,7 +1565,8 @@ ul li{
   display: grid;
   grid-template-rows: 318px 318px 318px;
   grid-template-columns: 220px 220px 220px;
-  gap: 20px;
+  column-gap: 20px;
+  grid-row-gap: 18px;
   padding: 0;
   margin-top: 26px;
 }
@@ -1440,7 +1616,7 @@ ul li{
 .catalog-nav{
   display: flex;
   padding: 0;
-  margin-top: 50px;
+  margin-top: 54px;
 }
 .catalog-nav a{
   padding: 10px 15px;
