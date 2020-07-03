@@ -607,6 +607,7 @@ ul li{
    display: block;
    position: absolute;
    top: 38px;
+   left: 2px;
 }
 .product-info{
   height: 118px;
@@ -951,14 +952,16 @@ ul li{
 .footer-copyright-wrapper{
   position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /*justify-content: space-between;
+  align-items: center;*/
   padding: 20px 0 20px 0;
 }
 .copyrights p{
   margin: 0;
-  margin-left: 6px;
   padding: 0;
+}
+.copyrights p:first-child{
+  margin-top: 14px;
 }
 .vk-icon{
   position: absolute;
@@ -1001,7 +1004,8 @@ ul li{
   color: var(--basic-red);
 }
 .mail-link{
-  margin-left: 252px;
+  margin-left: 374px;
+  margin-right: 52px;
 }
 /*CATALOG*/
 .catalog-info{
@@ -1116,15 +1120,16 @@ ul li{
   color: var(--basic-black);
 }
 .bread-crumbs li:first-child{
-  padding-right: 15px;
+  padding-right: 19px;
   padding-left: 0;
+  margin-left: -16px;
 
   background-image: url(../images/icon-home.svg), url(../images/icon-right-small.svg);
   background-repeat: no-repeat;
   background-position: center, center right;
 }
 .bread-crumbs li{
-  padding-left: 17px;
+  padding-left: 16px;
 
   background-image: url(../images/icon-right-small.svg);
   background-repeat: no-repeat;
@@ -1238,11 +1243,12 @@ ul li{
 }
 .range-controls .max-toggle{
   left: 18px;
-  }
+}
 .max-price input[type="number"],
 .min-price input[type="number"]{
-  width: 100px;
+  width: 95px;
   padding: 10px 0;
+  padding-left: 13px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -1250,6 +1256,13 @@ ul li{
 
   border: none;
   background-color: var(--special-grey-light);
+}
+.min-price input[type="number"]{
+  margin-right: 5px;
+}
+.max-price input[type="number"]{
+  margin-left: 3px;
+  padding-left: 16px;
 }
 .filter-label{
   font-size: 15px;
@@ -1287,7 +1300,6 @@ ul li{
   background-image: url(../images/checkbox-off.svg);
   background-repeat: no-repeat;
 }
-/*Чекбокс при наведении*/
 .filter-input-checkbox:hover + label::before {
   content: "";
   position: absolute;
@@ -1353,11 +1365,34 @@ ul li{
   top: 0;
   width: 25px;
   height: 25px;
-
   
   background-image: url(../images/checkbox-disabled.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+/*Чекбокс disabeled checked*/
+.filter-input-checkbox:disabled:checked + label::after{
+  opacity: 0.4;
+}
+.filter-input-checkbox:disabled:checked + label::before{
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 27px;
+  height: 23px;
+  opacity: 0.4;
+
+  background-image: url(../images/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+.filter-input-checkbox:disabled + label,
+ .filter-input-radio:disabled + label{
+  color: var(--special-light-grey);
+}
+/*Чекбокс disabeled checked hover*/
+.filter-input-checkbox:disabled:checked:hover + label::after{
+  opacity: 0.3;
 }
 .checkbox-item,
 .radio-item{
@@ -1408,6 +1443,7 @@ ul li{
   left: -31px;
   width: 25px;
   height: 17px;
+
   background-image: url(../images/radio-check.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1424,7 +1460,7 @@ ul li{
   background-repeat: no-repeat;
 }
 /*Радио checked при наведении*/
-.filter-input-radio:checked + label::after{
+.filter-input-radio:checked:hover + label::after{
   content: "";
   position: absolute;
   top: 8px;
@@ -1456,10 +1492,16 @@ ul li{
   width: 25px;
   height: 25px;
 
-  
   background-image: url(../images/radio-off-disabled.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+/*Радио disabled cheked*/
+.filter-input-radio:disabled:checked + label::after{
+  opacity: 0.4;
+}
+.filter-input-radio:disabled:checked:hover + label::before{
+  opacity: 0.3;
 }
 .btn-filter{
   padding: 10px 80px;
@@ -1620,7 +1662,7 @@ ul li{
 }
 .catalog-nav a{
   padding: 10px 15px;
-  margin-right: 10px;
+  margin-right: 8px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -1629,6 +1671,10 @@ ul li{
 
   border: 1px solid var(--special-greylight);
   border-radius: 4px;
+}
+.catalog-nav li:last-child a{
+  padding: 10px 32px;
+  margin-right: 8px;
 }
 .catalog-nav a:hover{
   border: 1px solid var(--special-light-grey);
