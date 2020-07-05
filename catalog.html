@@ -74,7 +74,7 @@
 
     <main>
         <ul class="bread-crumbs container">
-            <li><a href="index.html"></a></li>
+            <li><a href="index.html" aria-label="на главную" class="link-home"></a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Инструмент</a></li>
             <li><a href="#">Перфораторы</a></li>
@@ -101,7 +101,7 @@
                                         <input type="number" name="min-price" value="0" aria-label="от">
                                     </label>
                                     <label class="max-price">
-                                        — <input type="number" name="max-price" value="30000" aria-label="до">
+                                        — <input type="number" name="max-price" value="30000" aria-label="до" step="100">
                                     </label>
                                 </div>
                             </div>
@@ -186,7 +186,7 @@
                                         <a href="#" class="btn btn-wish-list">В закладки</a>
                                     </div>
                                 </div>
-                                <div class="new-product"></div>
+                                <div class="new-product visually-hidden"></div>
                             </li>
                             <li class="product-item">
                                 <img src="images/perforator-3.jpg" alt="Перфоратор BOSCH  BFG 6000" width="144" height="128">
@@ -199,7 +199,7 @@
                                         <a href="#" class="btn btn-wish-list">В закладки</a>
                                     </div>
                                 </div>
-                                <div class="new-product"></div>
+                                <div class="new-product visually-hidden"></div>
                             </li>
                             <li class="product-item">
                                 <img src="images/perforator-2.jpg" alt="Перфоратор BOSCH  BFG 6000" width="144" height="128">
@@ -239,7 +239,7 @@
                                         <a href="#" class="btn btn-wish-list">В закладки</a>
                                     </div>
                                 </div>
-                                <div class="new-product"></div>
+                                <div class="new-product visually-hidden"></div>
                             </li>
                             <li class="product-item">
                                 <img src="images/perforator-4.jpg" alt="Перфоратор BOSCH  BFG 2000" width="127" height="112">
@@ -279,10 +279,10 @@
                                         <a href="#" class="btn btn-wish-list">В закладки</a>
                                     </div>
                                 </div>
-                                <div class="new-product"></div>
+                                <div class="new-product visually-hidden"></div>
                             </li>
                             <li class="product-item"> 
-                                <img src="images/perforator-4.jpg" alt="Перфоратор BOSCH  BFG 2000" width="">
+                                <img src="images/perforator-4.jpg" alt="Перфоратор BOSCH  BFG 2000" width="127" height="112">
                                 <div class="product-info">
                                     <h3>Перфоратор BOSCH  BFG 2000</h3>
                                     <p class="old-price old-price-none">30500 Р.</p>
@@ -302,7 +302,7 @@
                                 <li><a href="#">1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a href="#">3</a></li>
-                                <li><a href="#">Следующая</a></li>
+                                <li class="catalog-nav-next"><a href="#">Следующая</a></li>
                             </ul>
                         </div>
                         
@@ -384,6 +384,7 @@
 
     <!-- Товар добавлен в корзину -->
     <section class="cart-modal modal visually-hidden">
+        <h2 class="visually-hidden">Товар добавлен в корзину</h2>
         <button type="button" class="btn-close btn-cart-close" aria-label="Закрыть"></button>
         <p>Товар добавлен в корзину!</p>
 
