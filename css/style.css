@@ -1714,8 +1714,9 @@ ul li{
 .modal{
   display: none;
 }
-.modal-show{
+.modal-show {
   display: block;
+  animation: bounce 0.6s;
 }
 .write-us{
   position: fixed;
@@ -1871,4 +1872,24 @@ ul li{
   top: 13px;
   width: 21px;
   height: 21px;
+}  
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
