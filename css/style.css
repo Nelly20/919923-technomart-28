@@ -583,6 +583,7 @@ ul li{
   display: flex;
   flex-direction: column;
   width: 220px;
+  height: 318px;
   padding: 0 18px 21px 18px;
   
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1849,7 +1850,7 @@ ul li{
   margin-right: 10px;
 }
 .btn-modal{
-  width: 192px
+  width: 192px;
   height: 38px;
   padding: 11px 31px 9px 31px;
   font-size: 14px;
@@ -1870,48 +1871,6 @@ ul li{
   width: 21px;
   height: 21px;
 }  
-
-/* Animations */
-
-/*@keyframes bounce {
-  0% {
-    transform: translate(-50%, -80%);
-  }
-
-  70% {
-    transform: translate(-50%, -40%);
-  }
-
-  90% {
-    transform: translate(-50%, -70%);
-  }
-
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
-
-@keyframes shake {
-  0%,
-  100% {
-    transform: translate(-50%, -50%);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translate(-51%, -50%);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translate(-49%, -50%);
-  }
-}*/
 
 
 @keyframes bounce {
