@@ -14,9 +14,9 @@
   --basic-dark-blue: #32425C;
   --basic-light-yellow: #FFD180;  
 
-  --special-btn-white: rgb(255, 255, 255, 0.3);
-  --special-btn-white-hover: rgb(197, 197, 197, 0.3);
-  --special-btn-white-active: rgb(169, 169, 169, 0.3);
+  --special-btn-white: rgba(255, 255, 255, 0.3);
+  --special-btn-white-hover: rgba(197, 197, 197, 0.3);
+  --special-btn-white-active: rgba(169, 169, 169, 0.3);
   --special-btn-service-shadow: #405069;
   --special-light-green: #8ED78F;
   --special-dark-green: #518534;
@@ -253,6 +253,7 @@ input[type="radio"].visually-hidden{
 }
 .info{
  display: flex;
+ justify-content: space-between;
 }
 .info-title{
   margin-left: 30px;
@@ -264,7 +265,7 @@ input[type="radio"].visually-hidden{
 }
 .phone-number{
   margin-top: 39px;
-  margin-left: 93px;
+  margin-left: 92px;
 }
 .phone-number a{
   padding: 8px 45px 8px 74px;
@@ -314,6 +315,7 @@ input[type="radio"].visually-hidden{
 .sign-in .enter:active{
   background-image: url(../images/icon-login.svg);
 }
+
 .main-nav{
   display: flex;
   flex-wrap: wrap;
@@ -536,7 +538,6 @@ input[type="radio"].visually-hidden{
 }
 .products{
   display: grid;
-  grid-template-rows: 320px;
   grid-template-columns: 218px 218px 218px 218px;
   gap: 22px;
   padding: 0;
@@ -611,7 +612,7 @@ input[type="radio"].visually-hidden{
 }
 .new-price::after{
   position: absolute;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   top: 0;
@@ -898,7 +899,7 @@ input[type="radio"].visually-hidden{
   padding: 20px 0 10px 0;
 }
 .copyrights{
-  margin-right: 122px;
+  margin-right: 162px;
 }
 .copyrights p{
   margin: 0;
@@ -911,12 +912,13 @@ input[type="radio"].visually-hidden{
 .icons-section{
   list-style: none;
   margin-top: 14px;
-  margin-right: 118px;
+  margin-right: 119px;
+  padding-left: 0;
 }
 .icons-section li{
   display: inline-block;
   vertical-align: middle;
-  margin-right: -2px;
+  margin-right: -3px;
 }
 .yellow-link{
   color: var(--basic-light-yellow);
@@ -1515,7 +1517,6 @@ input[type="radio"].visually-hidden{
 }
 .popular-catalog{
   display: grid;
-  grid-template-rows: 318px;
   grid-template-columns: 220px 220px 220px;
   column-gap: 20px;
   grid-row-gap: 18px;
@@ -1704,10 +1705,13 @@ input[type="radio"].visually-hidden{
 }
 .map-modal{
   width: 943px;
-  height: 449px;
+  height: 435px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   border-top: 5px solid var(--basic-red);
   background-color: var(--basic-white);
+}
+.map-modal img{
+  margin-top: -41px;
 }
 .btn-map-close{
   position: relative;
