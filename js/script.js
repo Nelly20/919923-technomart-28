@@ -5,6 +5,7 @@ var loginForm = loginPopup.querySelector("form");
 var loginLogin = loginPopup.querySelector("[name=name]");
 var loginPassword = loginPopup.querySelector("[name=email]");
 
+
 var isStorageSupport = true;
 var storage = "";
 
@@ -51,6 +52,33 @@ window.addEventListener("keydown", function (evt) {
       evt.preventDefault();
       loginPopup.classList.remove("modal-show");
       loginPopup.classList.remove("modal-error");
+    }
+  }
+});
+
+// Карта
+var mapLink = document.querySelector(".map-link");
+var mapPopup = document.querySelector(".map-modal");
+var mapClose = mapPopup.querySelector(".modal-close");
+
+
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("modal-show");
+});
+
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show");
+  mapPopup.classList.remove("modal-error");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+      mapPopup.classList.remove("modal-error");
     }
   }
 });

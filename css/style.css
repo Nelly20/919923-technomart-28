@@ -1710,8 +1710,13 @@ input[type="radio"].visually-hidden{
   border-top: 5px solid var(--basic-red);
   background-color: var(--basic-white);
 }
-.map-modal img{
-  margin-top: -41px;
+.map-modal iframe{
+  border: none;
+  margin: 0;
+  margin-top: -27px;
+}
+.map-link{
+  cursor: pointer;
 }
 .btn-map-close{
   position: relative;
